@@ -1,0 +1,18 @@
+:deployment:
+  :repo: your_app
+  :listen_port: 80
+  :environment:
+    SESSION_SECRET: unset
+    DB_PASSWORD: supersecret
+
+  :production:
+    :db_host: db.example.net
+    :environment:
+      SESSION_SECRET: rahDexaemeneekochebe
+      DB_PASSWORD: bahngeecaiTeejiehera
+      ENVIRONMENT: production
+
+  :development:
+    :listen_port: 9292
+    :db_host: db.dev.example.net
+
