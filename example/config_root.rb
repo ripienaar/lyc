@@ -4,9 +4,9 @@ require 'lyc'
 class Deployment
   include LYC
 
-  property :repo,         :validate => String
-  property :listen_port,  :validate => /^\d+$/
-  property :environment,  :type => Hash
+  property :repo,         :validation => String
+  property :listen_port,  :validation => /^\d+$/
+  property :environment,  :validation => Hash
 
   attr_accessor :environments
 
